@@ -1,0 +1,515 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>
+     Conection Find Job
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-white text-gray-700">
+
+    <!-- Fondo animado -->
+    <div class="fixed inset-0 -z-10 bg-gradient-to-br from-blue-900/80 to-black/90"></div>
+    <div class="fixed inset-0 -z-10 pointer-events-none">
+      <div class="absolute w-[40rem] h-[40rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 glow-effect rounded-full opacity-30 blur-3xl"></div>
+    </div>
+
+    <header class="border-b border-gray-200 backdrop-blur-md bg-white/80"> <!--class=" backdrop-blur-md bg-white/80 fixed top-0 w-full z-50"-->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center justify-between h-16">
+      <ul class="flex items-center space-x-6 text-sm text-gray-500 font-normal">
+        <li>
+        <a class="hover:text-gray-900" href="Index.html">
+          Home
+        </a>
+        </li>
+        <li>
+        <a class="text-blue-600 font-semibold hover:text-blue-700" href="Find_Job.html">
+          Find Job
+        </a>
+        </li>
+        <li>
+        <a class="hover:text-gray-900" href="Find_Employers.html">
+          Find Employers
+        </a>
+        </li>
+        <li>
+        <a class="hover:text-gray-900" href="dashboard.html">
+          Dashboard
+        </a>
+        </li>
+        <li>
+        <a class="hover:text-gray-900" href="Alerts.html">
+          Job Alerts
+        </a>
+        </li>
+        <li>
+        <a class="hover:text-gray-900" href="Contact.html">
+          Customer Supports
+        </a>
+        </li>
+      </ul>
+      <div class="flex items-center space-x-6 text-gray-600 text-sm font-normal">
+        <div class="flex items-center space-x-1">
+        <i class="fas fa-phone-alt text-gray-400">
+        </i>
+        <span>
+          +1-202-555-0178
+        </span>
+        </div>
+        <div class="flex items-center space-x-1 cursor-pointer select-none">
+        <img alt="United States flag" class="w-5 h-4 object-cover rounded-sm" loading="lazy" src="https://flagcdn.com/us.svg">
+        <span>
+          English
+        </span>
+        <i class="fas fa-chevron-down text-xs">
+        </i>
+        </div>
+      </div>
+      </nav>
+    </div>
+    </header>
+  
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <div class="flex items-center space-x-4">
+      <img alt="Conectado logo" class="w-8 h-8" height="32" src="logo.svg" width="32">
+      <span class="font-semibold text-lg text-gray-900 select-none">
+      connected
+      </span>
+      <div class="flex items-center border border-gray-300 rounded-md px-2 py-1 space-x-1 cursor-pointer select-none">
+      <img alt="Panama flag" class="w-5 h-4 object-cover rounded-sm" loading="lazy" src="https://flagcdn.com/pa.svg">
+      <span class="text-xs text-gray-700 font-normal">
+        Panama
+      </span>
+      <i class="fas fa-chevron-down text-xs text-gray-500">
+      </i>
+      </div>
+      <div class="flex items-center flex-grow max-w-xl border border-gray-300 rounded-md px-3 py-2 text-gray-400 text-sm">
+      <i class="fas fa-search mr-2">
+      </i>
+      <input aria-label="Job title, keyword, company" class="w-full bg-transparent focus:outline-none placeholder:text-gray-400 text-sm" placeholder="Job tittle, keyword, company" type="text">
+      </div>
+      <div class="flex items-center space-x-6 text-gray-700 text-lg cursor-pointer select-none">
+      <i class="far fa-bell relative">
+        <span class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-semibold rounded-full px-1.5">
+        1
+        </span>
+      </i>
+      <img alt="User profile picture of a man with short hair and beard" class="w-8 h-8 rounded-full object-cover" height="32" src="https://storage.googleapis.com/a1aa/image/7f6e9633-5267-4cc6-2996-eba57457533d.jpg" width="32">
+      </div>
+    </div>
+    <section class="mt-8">
+      <div class="flex justify-between items-center mb-3">
+      <h2 class="text-gray-700 font-semibold text-sm select-none">
+        Find Job
+      </h2>
+      <nav class="text-xs text-gray-400 select-none">
+        <a class="hover:text-gray-600" href="#">
+        Home
+        </a>
+        <span class="mx-1">
+        /
+        </span>
+        <span>
+        Find job
+        </span>
+      </nav>
+      </div>
+      <form aria-label="Find job form" class="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-3 bg-white border border-gray-200 rounded-md px-4 py-3">
+      <label class="flex items-center space-x-2 flex-grow sm:flex-grow-0 sm:w-72 bg-gray-50 rounded-md px-3 py-2 text-gray-400 text-sm cursor-text">
+        <i class="fas fa-search">
+        </i>
+        <input aria-label="Job title or keyword" class="bg-transparent focus:outline-none placeholder:text-gray-400 text-sm w-full" placeholder="Job tittle, Keyword..." type="text">
+      </label>>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-6 py-2 text-sm font-semibold whitespace-nowrap" type="submit">
+        Find Job
+      </button>
+      </form>
+      <div class="flex flex-wrap justify-between items-center mt-6 space-y-3 sm:space-y-0">
+      <div class="flex space-x-2 flex-wrap">
+        <button class="flex items-center space-x-1 bg-gray-100 text-gray-600 text-xs rounded-full px-3 py-1 select-none" type="button">
+        <span>
+          Design
+        </span>
+        <i class="fas fa-times text-xs">
+        </i>
+        </button>
+        <button class="flex items-center space-x-1 bg-gray-100 text-gray-600 text-xs rounded-full px-3 py-1 select-none" type="button">
+        <span>
+          New York
+        </span>
+        <i class="fas fa-times text-xs">
+        </i>
+        </button>
+      </div>
+      <div class="flex items-center space-x-3">
+        <select aria-label="Items per page" class="border border-gray-300 rounded-md text-xs text-gray-600 px-3 py-1 focus:outline-none focus:ring-1 focus:ring-blue-600">
+        <option>
+          Location
+        </option>
+        <option>
+          External
+        </option>
+        <option>
+          Internal
+        </option>
+        <option>
+          Local
+        </option>
+        </select>
+        <select aria-label="Sort by" class="border border-gray-300 rounded-md text-xs text-gray-600 px-3 py-1 focus:outline-none focus:ring-1 focus:ring-blue-600">
+        <option>
+          Latest
+        </option>
+        <option>
+          Oldest
+        </option>
+        <option>
+          Popular
+        </option>
+        </select>
+        <select aria-label="Items per page" class="border border-gray-300 rounded-md text-xs text-gray-600 px-3 py-1 focus:outline-none focus:ring-1 focus:ring-blue-600">
+        <option>
+          12 per page
+        </option>
+        <option>
+          24 per page
+        </option>
+        <option>
+          48 per page
+        </option>
+        </select>
+        <button aria-label="Grid view" class="border border-gray-300 rounded-md p-1 text-gray-600 hover:text-gray-900" type="button">
+        <i class="fas fa-th">
+        </i>
+        </button>
+        <button aria-label="List view" class="border border-gray-300 rounded-md p-1 text-gray-400 cursor-not-allowed" disabled="" type="button">
+        <i class="fas fa-list">
+        </i>
+        </button>
+      </div>
+      </div>
+      <section aria-label="Job listings" class="mt-4 border border-blue-400 rounded-md grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-4 p-4">
+      <!-- Job 1 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Red square with white letter R representing Reddit logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1d84d2ce-37c9-4f95-c301-f8f7472307f7.jpg" width="32">
+          <div class="flex items-center space-x-2">
+          <h3 class="text-xs font-semibold text-gray-900 select-none">
+            Reddit
+          </h3>
+          <span class="bg-pink-200 text-pink-600 text-[9px] font-semibold rounded-full px-2 py-0.5 select-none">
+            Featured
+          </span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          United Kingdom of Great Britain
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          Marketing Officer
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Full Time &nbsp;•&nbsp; $30K-$35K
+        </p>
+        </div>
+      </article>
+      <!-- Job 2 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-blue-400 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Pink square with white letter D representing Dribbble logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/644d32ea-b7bc-4625-2edd-5a0908bdbd78.jpg" width="32">
+          <div class="flex items-center space-x-2">
+          <h3 class="text-xs font-semibold text-gray-900 select-none">
+            Dribbble
+          </h3>
+          <span class="bg-pink-200 text-pink-600 text-[9px] font-semibold rounded-full px-2 py-0.5 select-none">
+            Featured
+          </span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          California
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-blue-700 mb-1 select-none">
+          Sunior UX Designer.
+        </h4>
+        <p class="text-xs text-blue-700 select-none">
+          Full-Time &nbsp;•&nbsp; $50k-80k/month
+        </p>
+        </div>
+      </article>
+      <!-- Job 3 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Blue square with white shield and star representing Freepik logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/08abfec4-5cc4-4c8d-48fc-a1228a2e6f9d.jpg" width="32">
+          <div class="flex items-center space-x-2">
+          <h3 class="text-xs font-semibold text-gray-900 select-none">
+            Freepik
+          </h3>
+          <span class="bg-pink-200 text-pink-600 text-[9px] font-semibold rounded-full px-2 py-0.5 select-none">
+            Featured
+          </span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          China
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          Visual Designer
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Full Time &nbsp;•&nbsp; $10K-$15K
+        </p>
+        </div>
+      </article>
+      <!-- Job 4 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Black square with colorful F representing Figma logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/bbc16a0f-8791-4dbe-dfc5-fdf7861dd7c4.jpg" width="32">
+          <div class="flex items-center space-x-2">
+          <h3 class="text-xs font-semibold text-gray-900 select-none">
+            Figma
+          </h3>
+          <span class="bg-pink-200 text-pink-600 text-[9px] font-semibold rounded-full px-2 py-0.5 select-none">
+            Featured
+          </span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          Canada
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          UI/UX Designer
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Full Time &nbsp;•&nbsp; $50K-$70K
+        </p>
+        </div>
+      </article>
+      <!-- Job 5 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Pink square with white letter D representing Dribbble logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/644d32ea-b7bc-4625-2edd-5a0908bdbd78.jpg" width="32">
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          United States
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          Junior Graphic Designer
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Temporary &nbsp;•&nbsp; $35K-$40K
+        </p>
+        </div>
+      </article>
+      <!-- Job 6 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Blue square with white bird representing Twitter logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/fb94a339-cc6b-412a-0be3-a0dc31d36a5d.jpg" width="32">
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          Canada
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          Senior UX Designer
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Internship &nbsp;•&nbsp; $50K-$60K
+        </p>
+        </div>
+      </article>
+      <!-- Job 7 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Light gray square with Microsoft logo colors representing Microsoft" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/913cfb9a-df97-4b86-d5fd-b0a18d7b92ec.jpg" width="32">
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          Australia
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          Product Designer
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Full Time &nbsp;•&nbsp; $40K-$50K
+        </p>
+        </div>
+      </article>
+      <!-- Job 8 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Green square with white letters Up representing Upwork logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/94bf4ebe-7f3a-454b-26a0-aefa36754d4d.jpg" width="32">
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          France
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          Techical Support Specialist
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Full Time &nbsp;•&nbsp; $35K-$40K
+        </p>
+        </div>
+      </article>
+      <!-- Job 9 -->
+      <article class="bg-[#fef6e7] rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Light beige square with colorful Slack logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/578add6a-8d14-4437-5c39-fb56e6f839f7.jpg" width="32">
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          Germany
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          Networking Engineer
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Remote &nbsp;•&nbsp; $50K-$90K
+        </p>
+        </div>
+      </article>
+      <!-- Job 10 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Purple to orange gradient square with white camera icon representing Instagram logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e8771247-d083-4571-c6e2-482e4cb1f176.jpg" width="32">
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          Australia
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          Front End Developer
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Contract Base &nbsp;•&nbsp; $50K-$80K
+        </p>
+        </div>
+      </article>
+      <!-- Job 11 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Blue square with white letter F representing Facebook logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2d04fca6-e485-43a6-bea6-71e4100979c4.jpg" width="32">
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          United Kingdom of Great Britain
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          Software Engineer
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Part Time &nbsp;•&nbsp; $15K-$20K
+        </p>
+        </div>
+      </article>
+      <!-- Job 12 -->
+      <article class="bg-white rounded-md p-4 shadow-sm border border-gray-200 flex flex-col justify-between" tabindex="0">
+        <div>
+        <div class="flex items-center space-x-3 mb-2">
+          <img alt="Red square with white play button representing Youtube logo" class="w-8 h-8 rounded-sm object-cover" height="32" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b8bc7cdb-0761-4c8d-3f43-8c637f0dde55.jpg" width="32">
+        </div>
+        <div class="flex items-center space-x-1 text-xs text-gray-400 mb-1 select-none">
+          <i class="fas fa-map-marker-alt text-gray-300">
+          </i>
+          <span>
+          Germany
+          </span>
+        </div>
+        <h4 class="font-semibold text-sm text-gray-900 mb-1 select-none">
+          Interaction Designer
+        </h4>
+        <p class="text-xs text-gray-500 select-none">
+          Full Time &nbsp;•&nbsp; $20K-$25K
+        </p>
+        </div>
+      </article>
+      </section>
+      <nav aria-label="Pagination" class="flex justify-center items-center space-x-3 mt-6 select-none text-gray-500 text-sm">
+      <button aria-label="Previous page" class="p-2 rounded-full hover:bg-gray-100" type="button">
+        <i class="fas fa-arrow-left">
+        </i>
+      </button>
+      <button aria-current="page" class="w-8 h-8 rounded-full bg-blue-700 text-white flex items-center justify-center font-semibold" type="button">
+        01
+      </button>
+      <button class="w-8 h-8 rounded-full hover:bg-gray-100 flex items-center justify-center" type="button">
+        02
+      </button>
+      <button class="w-8 h-8 rounded-full hover:bg-gray-100 flex items-center justify-center" type="button">
+        03
+      </button>
+      <button class="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold" type="button">
+        04
+      </button>
+      <button class="w-8 h-8 rounded-full hover:bg-gray-100 flex items-center justify-center" type="button">
+        05
+      </button>
+      <button aria-label="Next page" class="p-2 rounded-full hover:bg-gray-100" type="button">
+        <i class="fas fa-arrow-right">
+        </i>
+      </button>
+      </nav>
+    </section>
+    </main>
+ 
+    <footer class="mt-12 border-t border-gray-200 py-6 text-center text-sm text-gray-500 backdrop-blur-md bg-white/80">
+      © 2025 Conection. All rights reserved.
+    </footer>
+</body>
+</html>
