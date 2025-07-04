@@ -125,28 +125,7 @@
         <i class="fas fa-search">
         </i>
         <input aria-label="Job title or keyword" class="bg-transparent focus:outline-none placeholder:text-gray-400 text-sm w-full" placeholder="Job tittle, Keyword..." type="text">
-      </label>
-      <label class="flex items-center space-x-2 flex-grow sm:flex-grow-0 sm:w-56 bg-gray-50 rounded-md px-3 py-2 text-gray-400 text-sm cursor-text">
-        <i class="fas fa-map-marker-alt">
-        </i>
-        <input aria-label="Location" class="bg-transparent focus:outline-none placeholder:text-gray-400 text-sm w-full" placeholder="Location" type="text">
-      </label>
-      <label aria-expanded="false" aria-haspopup="listbox" aria-label="Select Category" class="flex items-center space-x-2 flex-grow sm:flex-grow-0 sm:w-56 bg-gray-50 rounded-md px-3 py-2 text-gray-400 text-sm cursor-pointer select-none" tabindex="0">
-        <i class="fas fa-layer-group">
-        </i>
-        <span class="flex-grow">
-        Select Category
-        </span>
-        <i class="fas fa-chevron-down text-xs">
-        </i>
-      </label>
-      <label aria-expanded="false" aria-haspopup="listbox" aria-label="Advance Filter" class="flex items-center space-x-2 flex-grow sm:flex-grow-0 sm:w-40 bg-gray-50 rounded-md px-3 py-2 text-gray-400 text-sm cursor-pointer select-none" tabindex="0">
-        <span>
-        Advance Filter
-        </span>
-        <i class="fas fa-chevron-down text-xs">
-        </i>
-      </label>
+      </label>>
       <button class="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-6 py-2 text-sm font-semibold whitespace-nowrap" type="submit">
         Find Job
       </button>
@@ -169,6 +148,20 @@
         </button>
       </div>
       <div class="flex items-center space-x-3">
+        <select aria-label="Items per page" class="border border-gray-300 rounded-md text-xs text-gray-600 px-3 py-1 focus:outline-none focus:ring-1 focus:ring-blue-600">
+        <option>
+          Location
+        </option>
+        <option>
+          External
+        </option>
+        <option>
+          Internal
+        </option>
+        <option>
+          Local
+        </option>
+        </select>
         <select aria-label="Sort by" class="border border-gray-300 rounded-md text-xs text-gray-600 px-3 py-1 focus:outline-none focus:ring-1 focus:ring-blue-600">
         <option>
           Latest
@@ -516,7 +509,7 @@
     </main>
  
     <footer class="mt-12 border-t border-gray-200 py-6 text-center text-sm text-gray-500 backdrop-blur-md bg-white/80">
-      © 2025 MyJob. Todos los derechos reservados.
+      © 2025 Conection. All rights reserved.
     </footer>
 </body>
 </html>

@@ -11,7 +11,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white text-gray-700">
-   <header class="border-b border-gray-200">
+  <!-- Fondo animado -->
+  <div class="fixed inset-0 -z-10 bg-gradient-to-br from-blue-900/80 to-black/90"></div>
+  <div class="fixed inset-0 -z-10 pointer-events-none">
+    <div class="absolute w-[40rem] h-[40rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 glow-effect rounded-full opacity-30 blur-3xl"></div>
+  </div>
+
+  <header class="border-b border-gray-200  backdrop-blur-md bg-white/80">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <nav class="flex items-center justify-between h-16">
      <ul class="flex items-center space-x-6 text-sm text-gray-500 font-normal">
@@ -70,31 +76,32 @@
   <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
     <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="bg-white border rounded-lg p-6 shadow-md">
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">Mis Aplicaciones</h2>
-        <p class="text-sm text-gray-600">Has aplicado a 8 ofertas esta semana.</p>
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">My Applications</h2>
+        <p class="text-sm text-gray-600">You have applied to 8 job offers this week.</p>
       </div>
       <div class="bg-white border rounded-lg p-6 shadow-md">
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">Vacantes Guardadas</h2>
-        <p class="text-sm text-gray-600">Tienes 5 vacantes guardadas para aplicar más tarde.</p>
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Saved Vacancies</h2>
+        <p class="text-sm text-gray-600">You have 5 saved vacancies to apply later.</p>
       </div>
       <div class="bg-white border rounded-lg p-6 shadow-md">
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">Notificaciones</h2>
-        <p class="text-sm text-gray-600">3 nuevas empresas vieron tu perfil.</p>
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Notifications</h2>
+        <p class="text-sm text-gray-600">3 new companies viewed your profile.</p>
       </div>
     </section>
 
     <section class="mt-10">
-      <h3 class="text-lg font-semibold text-gray-900 mb-4">Actividad Reciente</h3>
+      <h3 class="text-lg font-semibold text-gray-900 mb-4">Recent Activity</h3>
       <ul class="space-y-3">
-        <li class="bg-gray-50 border rounded-md px-4 py-3 text-sm text-gray-700 shadow-sm">Postulaste al cargo de Frontend Developer en Freepik</li>
-        <li class="bg-gray-50 border rounded-md px-4 py-3 text-sm text-gray-700 shadow-sm">Guardaste la vacante de Diseñador Gráfico en Canva</li>
-        <li class="bg-gray-50 border rounded-md px-4 py-3 text-sm text-gray-700 shadow-sm">Tu perfil fue visitado por Microsoft</li>
+        <li class="bg-gray-50 border rounded-md px-4 py-3 text-sm text-gray-700 shadow-sm">You applied for the position of Frontend Developer at Freepik</li>
+        <li class="bg-gray-50 border rounded-md px-4 py-3 text-sm text-gray-700 shadow-sm">You saved the Graphic Designer vacancy at Canva</li>
+        <li class="bg-gray-50 border rounded-md px-4 py-3 text-sm text-gray-700 shadow-sm">Your profile was viewed by Microsoft</li>
       </ul>
     </section>
   </main>
 
-  <footer class="mt-12 border-t border-gray-200 py-6 text-center text-sm text-gray-500">
-    © 2025 MyJob. Todos los derechos reservados.
+
+  <footer class="mt-12 border-t border-gray-200 py-6 text-center text-sm text-gray-500  backdrop-blur-md bg-white/80">
+    © 2025 Conection. All rights reserved.
   </footer>
 </body>
 </html>

@@ -11,7 +11,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white text-gray-700">
-  <header class="border-b border-gray-200">
+  <!-- Fondo animado -->
+  <div class="fixed inset-0 -z-10 bg-gradient-to-br from-blue-900/80 to-black/90"></div>
+  <div class="fixed inset-0 -z-10 pointer-events-none">
+    <div class="absolute w-[40rem] h-[40rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 glow-effect rounded-full opacity-30 blur-3xl"></div>
+  </div>
+  
+  <header class="border-b border-gray-200 backdrop-blur-md bg-white/80">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <nav class="flex items-center justify-between h-16">
      <ul class="flex items-center space-x-6 text-sm text-gray-500 font-normal">
@@ -69,26 +75,27 @@
 
   <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
     <section>
-      <h1 class="text-3xl font-bold text-gray-900 mb-6 text-center">Centro de Alertas</h1>
+      <h1 class="text-3xl font-bold text-gray-900 mb-6 text-center">Alert Center</h1>
       <div class="space-y-4">
         <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-md shadow-sm animate-fade-in-up">
-          <p class="text-sm text-blue-800 font-medium">Nueva vacante: Diseñador UI/UX - Remoto. ¡Aplica ahora!</p>
+          <p class="text-sm text-blue-800 font-medium">New vacancy: UI/UX Designer - Remote. Apply now!</p>
         </div>
         <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded-md shadow-sm animate-fade-in-up animation-delay-200">
-          <p class="text-sm text-green-800 font-medium">Tu perfil fue visitado por 3 empresas esta semana.</p>
+          <p class="text-sm text-green-800 font-medium">Your profile was viewed by 3 companies this week.</p>
         </div>
         <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-md shadow-sm animate-fade-in-up animation-delay-300">
-          <p class="text-sm text-yellow-800 font-medium">Actualiza tu currículum para aumentar tus oportunidades.</p>
+          <p class="text-sm text-yellow-800 font-medium">Update your resume to increase your chances.</p>
         </div>
         <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-md shadow-sm animate-fade-in-up animation-delay-400">
-          <p class="text-sm text-red-800 font-medium">Tu membresía expira en 3 días. Renueva para seguir aplicando.</p>
+          <p class="text-sm text-red-800 font-medium">Your membership expires in 3 days. Renew to continue applying.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="mt-12 border-t border-gray-200 py-6 text-center text-sm text-gray-500">
-    © 2025 MyJob. Todos los derechos reservados.
+  <footer class="mt-12 border-t border-gray-200 py-6 text-center text-sm text-gray-500 backdrop-blur-md bg-white/80">
+    © 2025 Conection. All rights reserved.
   </footer>
+
 </body>
 </html>

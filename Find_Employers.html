@@ -11,7 +11,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white text-gray-700">
-  <header class="border-b border-gray-200">
+    <!-- Fondo animado -->
+    <div class="fixed inset-0 -z-10 bg-gradient-to-br from-blue-900/80 to-black/90"></div>
+    <div class="fixed inset-0 -z-10 pointer-events-none">
+      <div class="absolute w-[40rem] h-[40rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 glow-effect rounded-full opacity-30 blur-3xl"></div>
+    </div>
+
+  <header class="border-b border-gray-200  backdrop-blur-md bg-white/80">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <nav class="flex items-center justify-between h-16">
      <ul class="flex items-center space-x-6 text-sm text-gray-500 font-normal">
@@ -69,34 +75,35 @@
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
     <section class="text-center">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 animate-fade-in-up">Encuentra al Talento Perfecto</h1>
-      <p class="mt-4 text-gray-600 max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
-        Publica tus vacantes y accede a miles de candidatos calificados en cuestión de minutos.
+      <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Find the Perfect Talent</h1>
+      <p class="mt-4 text-white max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
+        Post your vacancies and access thousands of qualified candidates in minutes.
       </p>
 
       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in-up animation-delay-300">
-        <div class="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
-          <h2 class="text-xl font-semibold text-blue-600">Filtros Avanzados</h2>
-          <p class="mt-2 text-sm text-gray-600">Encuentra candidatos por habilidades, experiencia, ubicación y más.</p>
-        </div>
-        <div class="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
-          <h2 class="text-xl font-semibold text-blue-600">Conexión Directa</h2>
-          <p class="mt-2 text-sm text-gray-600">Comunícate directamente con los postulantes más relevantes.</p>
-        </div>
-        <div class="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
-          <h2 class="text-xl font-semibold text-blue-600">Gestión de Vacantes</h2>
-          <p class="mt-2 text-sm text-gray-600">Publica, edita y organiza tus vacantes desde tu panel de control.</p>
-        </div>
-      </div>
+  <div class="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition">
+      <h2 class="text-xl font-semibold text-blue-600">Advanced Filters</h2>
+      <p class="mt-2 text-sm text-gray-600">Find candidates by skills, experience, location, and more.</p>
+    </div>
+    <div class="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition">
+      <h2 class="text-xl font-semibold text-blue-600">Direct Connection</h2>
+      <p class="mt-2 text-sm text-gray-600">Communicate directly with the most relevant applicants.</p>
+    </div>
+    <div class="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition">
+      <h2 class="text-xl font-semibold text-blue-600">Vacancy Management</h2>
+      <p class="mt-2 text-sm text-gray-600">Publish, edit, and organize your vacancies from your dashboard.</p>
+    </div>
+  </div>
+
 
       <p class="mt-12 text-gray-700 max-w-xl mx-auto animate-fade-in-up animation-delay-400">
-        MyJob es tu aliado estratégico para encontrar el mejor talento humano en el menor tiempo posible.
+        Conection is your strategic ally in finding the best human talent in the shortest possible time.
       </p>
     </section>
   </main>
 
-  <footer class="mt-12 border-t border-gray-200 py-6 text-center text-sm text-gray-500">
-    © 2025 MyJob. Todos los derechos reservados.
+  <footer class="mt-12 border-t border-gray-200 py-6 text-center text-sm text-gray-500 backdrop-blur-md bg-white/80">
+    © 2025 Conection. All rights reserved.
   </footer>
 </body>
 </html>
